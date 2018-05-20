@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditTask">
+
+    <EditText
+        android:id="@+id/editTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your task here"
+        />
+
+    <Button
+        android:id="@+id/editTaskDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="editButtonClicked"
+        android:text="Done" />
+
+</LinearLayout>

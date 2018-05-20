@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SingleTask">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singleTask"
+            android:text="Play Football"
+            android:textSize="30dp"
+            android:layout_margin="20dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singleTaskTime"
+            android:text="0 April"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"/>
+
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/updateTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="updateTask"
+        android:text="Update" />
+    <Button
+        android:id="@+id/deleteTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteTask"
+        android:text="Delete" />
+</LinearLayout>
